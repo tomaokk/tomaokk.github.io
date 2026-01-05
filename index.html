@@ -8,11 +8,12 @@
 <style>
     body {
         background: #000;
-        color: #fff;
+        color: #ccc; /* body text grey */
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
+
     nav {
         position: sticky;
         top: 0;
@@ -22,15 +23,17 @@
         border-bottom: 1px solid #222;
         z-index: 100;
     }
+
     nav a {
         margin: 0 20px;
-        color: #aaa;
+        color: #aaa; /* slightly grey for links */
         font-size: 17px;
         text-decoration: none;
         transition: 0.3s;
     }
+
     nav a:hover, nav a.active {
-        color: #4da6ff;
+        color: #4da6ff; /* accent color for hover/active */
     }
 
     .container {
@@ -52,18 +55,22 @@
         margin-bottom: 20px;
         transition: 0.4s ease;
     }
+
     .profile-img:hover {
         transform: scale(1.05);
         border-color: #4da6ff;
     }
 
     h1, h2 {
+        color: #fff; /* headers white */
         font-weight: 600;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
     }
+
     p, li {
+        color: #ccc; /* body text grey */
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
@@ -85,9 +92,10 @@
         list-style: none;
         padding-left: 0;
     }
+
     ul li::before {
         content: "• ";
-        color: #4da6ff;
+        color: #4da6ff; /* bullets accent color */
     }
 </style>
 </head>

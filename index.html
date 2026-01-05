@@ -95,7 +95,7 @@
 
     ul li::before {
         content: "• ";
-        color: #4da6ff;
+        color: #4da6ff; /* bullets accent color */
     }
 </style>
 </head>
@@ -110,6 +110,7 @@
     <a href="#education">Education</a>
 </nav>
 
+<!-- About Section -->
 <div class="container" id="about">
     <div class="center">
         <img src="https://raw.githubusercontent.com/tomaokk/tomaokk.github.io/main/toma.JPG" class="profile-img" alt="Toma Okumagba">
@@ -141,6 +142,7 @@
     <hr>
 </div>
 
+<!-- Projects Section -->
 <div class="container" id="projects">
     <h2>Projects</h2>
 
@@ -153,6 +155,7 @@
     <hr>
 </div>
 
+<!-- Experience Section -->
 <div class="container" id="experience">
     <h2>Experience</h2>
     <p class="project"><strong>AI Developer Intern — OwningMy</strong><br>
@@ -167,18 +170,29 @@
     <hr>
 </div>
 
+<!-- Skills Section -->
 <div class="container" id="skills">
     <h2>Skills</h2>
-    <p class="project">Python • SQL • Excel • Power BI • GitHub • Data Analysis • Workflow Automation • LLM Tools</p>
+    <ul class="project">
+        <li><strong>Programming:</strong> Python, Java, C/C++, SQL, HTML/CSS</li>
+        <li><strong>AI & Machine Learning:</strong> Large Language Models (LLMs), Prompt Engineering, AI fundamentals, AI-assisted analysis & summarization</li>
+        <li><strong>Data Engineering:</strong> Data pipelines, validation, cleaning, EDA, KPI analysis</li>
+        <li><strong>Automation & Scripting:</strong> Python scripting, workflow automation, API integration, OpenAI API</li>
+        <li><strong>Developer Tools:</strong> Testing workflows, code reviews, developer-focused documentation</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, Google Cloud Platform (GCP), Firebase</li>
+        <li><strong>Tools & Productivity:</strong> GitHub, VS Code, Jupyter Notebooks, Microsoft Office Suite, Excel, Power BI</li>
+    </ul>
     <hr>
 </div>
 
+<!-- Education Section -->
 <div class="container" id="education">
     <h2>Education</h2>
     <p><strong>BSc (Honours), Computer Science — York University</strong><br>
     Expected 2027</p>
 </div>
 
+<!-- Scripts -->
 <script>
     // smooth scroll
     document.querySelectorAll('nav a').forEach(link => {

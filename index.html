@@ -26,14 +26,14 @@
 
     nav a {
         margin: 0 20px;
-        color: #aaa; /* slightly grey for links */
+        color: #aaa;
         font-size: 17px;
         text-decoration: none;
         transition: 0.3s;
     }
 
     nav a:hover, nav a.active {
-        color: #4da6ff; /* accent color for hover/active */
+        color: #4da6ff;
     }
 
     .container {
@@ -95,7 +95,7 @@
 
     ul li::before {
         content: "• ";
-        color: #4da6ff; /* bullets accent color */
+        color: #4da6ff;
     }
 </style>
 </head>
@@ -201,13 +201,6 @@
     }, { threshold: 0.3 });
 
     fadeElems.forEach(el => observer.observe(el));
-
-    // Force fade-in on page load
-    window.addEventListener('load', () => {
-        document.querySelectorAll('h1, h2, p, li').forEach(el => {
-            el.classList.add('fade-in');
-        });
-    });
 </script>
 
 </body>

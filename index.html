@@ -63,7 +63,7 @@
         transform: translateY(20px);
         transition: all 0.6s ease;
     }
-    p, .project {
+    p, li {
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
@@ -79,6 +79,15 @@
     .fade-in {
         opacity: 1 !important;
         transform: translateY(0) !important;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    ul li::before {
+        content: "• ";
+        color: #4da6ff;
     }
 </style>
 </head>
@@ -101,14 +110,25 @@
     </div>
 
     <p>
-    Toma Okumagba is a Computer Science student at York University with a growing focus on artificial intelligence, 
-    human–computer interaction, and workflow automation. She builds practical tools powered by Python and LLMs.
+        I am a Computer Science student at York University passionate about AI, automation, and cloud systems. I have experience in Python, machine learning, and API integration, with hands-on projects in data pipelines, NLP, and web automation. My coursework in software design, data structures, and statistics has strengthened my technical foundation.
     </p>
 
     <p>
-    She has experience in AI development, data analytics, and technical roles in Canada and Nigeria. She founded \
-    HackHer YorkU to support women in tech.
+        I am driven to create scalable, user-focused technology and am excited to grow through impactful internship opportunities. I am hardworking, detail-oriented, and solution-focused.
     </p>
+
+    <h2>Relevant Courses</h2>
+    <ul>
+        <li>EECS 1015: Intro. to Computer Science & Programming</li>
+        <li>EECS 1022: Intro. to Object-Oriented Programming</li>
+        <li>EECS 2001: Intro. to the Theory of Computation</li>
+        <li>EECS 2031: Software Tools</li>
+        <li>EECS 2101: Fundamentals of Data Structures</li>
+        <li>EECS 3101: Design and Analysis of Algorithms</li>
+        <li>EECS 3000: Professional Practice in Computing</li>
+        <li>EECS 3421: Introduction to Database Systems</li>
+        <li>MATH 2030: Elementary Probability</li>
+    </ul>
 
     <hr>
 </div>
@@ -163,7 +183,7 @@
     });
 
     // fade-in on scroll
-    const fadeElems = document.querySelectorAll('h1, h2, p');
+    const fadeElems = document.querySelectorAll('h1, h2, p, li');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
